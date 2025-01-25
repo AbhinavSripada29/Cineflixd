@@ -1,24 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
   margin-top: 80px;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: #121212;
   color: #FCF6F5;
   line-height: 1.6;
   overflow-x: hidden;
 }
 
-
-
-.profile-page-main {
-  padding-top: 100px;
+main {
+  margin-top: 20px; /* Added margin to push content down */
 }
 
 .trending {
   padding: 20px;
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.movie-section {
+  margin-top: 40px;
 }
 
 .movie-cards {
@@ -45,11 +51,40 @@ body {
   }
 }
 
-.movie-cards img {
-  width: 100%; 
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+.movie-card img {
+  width: 100%;
   height: auto;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   cursor: pointer;
 }
 
+.movie-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.movie-card:hover .movie-overlay {
+  visibility: visible;
+  opacity: 1;
+}

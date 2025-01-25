@@ -3,24 +3,25 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import userSessionStore from '../../lib/userSessionStore';
 import { toast } from 'react-toastify';
+import logo from './logo-3.png'; 
 
 const Header = () => {
-
   const logout = userSessionStore((state) => state.logout);
 
   const handleLogout = async () => {
     try {
       await logout();
-      toast.success("Logged Out Successfully")
+      toast.success("Logged Out Successfully");
     } catch (error) {
-      toast.error("Failed to Log Out")
-      // alert("Failed to log out: " + error.message);
+      toast.error("Failed to Log Out");
     }
   };
 
   return (
     <header className="header">
-      <div className="logo">Logo</div>
+      <div className="logo">
+        <img className="logo-image" src={logo} alt="Logo" />
+      </div>
       <div className="home">
         <Link to="/homepage">HOME</Link>
       </div>

@@ -54,24 +54,35 @@ const Homepage = () => {
     <div>
       <Header />
       <main>
-        <h1 className="trending">LOADING....</h1>
-        <div className="movie-cards">
-          {movies.map((movie) => (
-            <img
-              key={movie.id}
-              src={movie.posterUrl}
-              alt={movie.name}
-              onClick={() => handlePosterClick(movie.id)}
-              style={{ cursor: 'pointer' }}
-            />
-          ))}
-        </div>
-        {userData && (
-          <div className="user-data">
-            <h2>Welcome, {userData.username}!</h2>
-            <p>Email: {userData.email}</p>
+        <section className="user-welcome">
+          {userData && (
+            <div className="user-data-card">
+              <div className="user-info">
+                <h2>{userData.username}</h2>
+                <span className="welcome-message">Welcome Back!</span>
+              </div>
+            </div>
+          )}
+        </section>
+
+        <section className="movie-section">
+          <h1 className="trending">Trending Movies</h1>
+          <div className="movie-cards">
+            {movies.map((movie) => (
+              <div key={movie.id} className="movie-card">
+                <img
+                  src={movie.posterUrl}
+                  alt={movie.name}
+                  onClick={() => handlePosterClick(movie.id)}
+                />
+                <div className="movie-overlay">
+                  <h3>{movie.name}</h3>
+                  <p>{movie.genre}</p>
+                </div>
+              </div>
+            ))}
           </div>
-        )}
+        </section>
       </main>
     </div>
   );

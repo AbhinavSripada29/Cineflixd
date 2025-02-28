@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+🎬 CineFlixd – Movie Review & Rating Platform
+📌 Overview
+CineFlixd is a movie review website designed for film enthusiasts to discover, review, and track movies they've watched. Built using React.js and Firebase, the platform allows users to rate movies, write reviews, and maintain a personal watch history, offering a seamless and interactive movie-tracking experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+--------------------------------------------------------
 
-## Available Scripts
+🚀 Features
+✅ Homepage Movie Listings – Browse a collection of movies with ratings and reviews.
+✅ Search Functionality – Quickly find movies by title.
+✅ User Profiles – View all watched movies along with personal ratings and reviews.
+✅ Movie Reviews & Ratings – Users can rate movies and leave detailed reviews.
+✅ Mark as Watched – Keep track of movies watched over time.
+✅ Firebase Integration – Securely stores user data and reviews in Firestore Database.
+✅ Modern UI – Inspired by Letterboxd’s dark gray theme, designed for an immersive experience.
+✅ Persistent User Data – User info, watch history, and reviews are stored using Firebase’s setDoc.
 
-In the project directory, you can run:
+--------------------------------------------------------
 
-### `npm start`
+🛠️ Tech Stack
+Frontend: React.js, React Router
+Backend: Firebase Firestore (NoSQL database)
+Authentication: Firebase Authentication
+State Management: Zustand
+Styling: CSS 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+--------------------------------------------------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📦 Installation & Setup
+1️⃣ Clone the Repository:
+git clone https://github.com/AbhinavSripada29/Cineflixd
+cd cineflixd
 
-### `npm test`
+2️⃣ Install Dependencies:
+3️⃣ Setup Firebase:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a Firebase project.
+Add your Firebase config in firebase.js.
+4️⃣ Run the Project:
+npm start
 
-### `npm run build`
+--------------------------------------------------------
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🌟 Future Enhancements
+🚀 Movie Recommendations based on user preferences.
+📌 Social Features like following friends and seeing their reviews.
+🎭 Genre-based Filtering for better movie discovery.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
